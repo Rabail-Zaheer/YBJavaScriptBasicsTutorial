@@ -279,7 +279,7 @@ if (per >= 80 && per <= 100) {
 } */
 
 // CONDITIONAL TERNARY OPERATOR
-
+/* 
 let number1 = 100;
 let number2;
 
@@ -371,7 +371,7 @@ switch (true) {
     break;
   default:
     console.log("Enter a Valid Age");
-}
+} */
 
 // USING AN ALERT BOX
 /* let v = 10;
@@ -418,7 +418,7 @@ if (per >= 80 && per <= 100) {
 } */
 
 // FUNCTIONS
-
+/* 
 function hello() {
   document.write("Hello Everyone!");
 }
@@ -489,7 +489,7 @@ function hellow() {
 }
 
 hello();
-console.log(myName);
+console.log(myName); */
 
 // EVENTS
 
@@ -514,7 +514,7 @@ Load - onload,
 Unload - onunload,
 Resize - onresize,
 Scroll - onscroll */
-
+/* 
 function welcome() {
   document.write(`Welcome to my site!`);
 }
@@ -541,9 +541,9 @@ do {
 for (let a = 1; a <= 10; a++) {
   console.log(a + ") Yahoo Baba Youtube Channel has amazing tutorials! </br>");
 }
-
+ */
 // BREAK AND CONTINUE STATEMENT
-
+/* 
 // WITHOUT ANY BREAK OR CONTINUE STATEMENT
 for (let a = 1; a <= 10; a++) {
   if (a == 3) {
@@ -569,8 +569,8 @@ for (let a = 1; a <= 10; a++) {
     break;
   }
   document.write("Number :" + a + "</br>");
-}
-
+} */
+/* 
 // EVEN AND ODD NUMBER USING LOOPS
 
 for (let a = 1; a < 10; a++) {
@@ -630,4 +630,174 @@ for (let i = 5; i >= 1; i--) {
   }
 
   document.write("</br>");
+} */
+
+// ARRAYS
+
+/* let ary = [10, 20, 30, 40];
+
+document.write(ary[2] + "</br>");
+
+for (let a = 0; a <= 3; a++) {
+  document.write(ary[a] + "</br>");
 }
+ */
+// Constructor Method to Declare an Array
+
+// when we don't know how many value and what values we are gonna assign we can use the constructor method and put a number which suggests the length of the array
+/* 
+let ar = new Array(4);
+
+ar[0] = 10;
+ar[1] = 20;
+ar[2] = "Harry";
+ar[3] = true;
+
+document.write(ar);
+
+// or we can directly add the values in this arry
+
+let arry = new Array(12, "blue", 15, "green");
+
+document.write(arry); */
+
+// LOOPING VALUES IN AN ARRAY
+/* 
+let array1 = new Array(3);
+
+for (let g = 0; g < 3; g++) {
+  array1[g] = prompt("Enter the value: ");
+}
+
+document.write("<ul>");
+for (let a = 0; a < 3; a++) {
+  document.write("<li>" + array1[a] + "</li>");
+}
+document.write("</ul>"); */
+
+// MULTIDIMENSIONAL ARRAY
+
+document.write("</br>");
+
+document.write("</br>");
+
+document.write("</br>");
+let multiarr = [
+  ["Harry", 18, "Male", "Potions"],
+  ["Hermoine", 18, "Female", "History of magic"],
+  ["Ron", 18, "Male", "Flying Lessons"],
+  ["Tom", 25, "Male", "Defence Against The Dark Arts"],
+];
+
+document.write("<table border = '1px' cellspacing = '0' ");
+for (let hp = 0; hp < 4; hp++) {
+  document.write("<tr>");
+  for (let hp1 = 0; hp1 < 4; hp1++) {
+    document.write("<td>" + multiarr[hp][hp1] + "</td>");
+  }
+  document.write("</tr>");
+}
+document.write("</table>");
+
+// MANIPULATING / CHANGING THE ELEMENTS OF AN ARRAY
+
+let narr = ["Harry", 18, "Male", "BCA"];
+document.write(narr + "</br>");
+narr[0] = "Sunny";
+document.write(narr + "</br>");
+
+// DELETING THE VALUES
+// the delete method deletes the value but the index is there
+delete a[1];
+document.write(a + "</br>"); // value is deleted but the space for the value is there
+
+document.write(a[1] + "</br>"); // when we print that space it says that it is undefined
+
+// ARRAY METHODS
+
+/* sort()
+reverse()
+pop()
+push()
+shift()
+unshift()
+concat()
+join()
+slice()
+splice()
+isArray()
+indexOf()
+lastIndexOf()
+entries()
+every()
+filter()
+find()
+findIndex()
+includes()
+some()
+forEach()
+toString()
+valueOf()
+fill() */
+
+// UNDERSTANDING SORT() AND REVERSE()
+
+document.write("</br>");
+
+let sortingArray = ["Rabail", "Komal", "Nabeel", "Adeel"];
+document.write(sortingArray + "</br>");
+
+document.write("</br>");
+
+sortingArray.sort();
+document.write(sortingArray + "</br>");
+
+document.write("</br>");
+
+sortingArray.reverse();
+document.write(sortingArray + "</br>");
+
+// UNDERSTANDING PUSH() AND POP()
+
+document.write("</br>");
+document.write("</br>");
+
+let poppingArray = ["Rabail", , "Komal", "Nabeel", "Sharjeel"];
+
+document.write(poppingArray + "</br>");
+
+poppingArray.pop();
+
+document.write(poppingArray + "</br>");
+
+document.write("</br>");
+
+poppingArray.push("Adeel");
+
+document.write(poppingArray + "</br>");
+
+// UNDERSTANDING SHIFT() AND UNSHIFT()
+
+document.write("</br>");
+
+document.write("</br>");
+
+let shiftUnshift = ["Poppy", "Rose", "Lilac", "Bloom"];
+
+document.write(shiftUnshift + "</br>");
+
+shiftUnshift.shift();
+
+document.write(shiftUnshift + "</br>");
+
+document.write("</br>");
+
+shiftUnshift.unshift("Stella");
+
+document.write(shiftUnshift + "</br>");
+
+document.write("</br>");
+
+document.write("</br>");
+
+// UNDERSTANDING CONCAT() AND JOIN()
