@@ -801,3 +801,63 @@ document.write("</br>");
 document.write("</br>");
 
 // UNDERSTANDING CONCAT() AND JOIN()
+
+let positiveemotions = ["happiness", "Contentment", "love"];
+
+for (let a = 0; a < positiveemotions.length; a++) {
+  document.write(" " + positiveemotions[a] + " ");
+}
+
+document.write("</br>");
+
+let allemotions = positiveemotions.concat(
+  "Anger",
+  "Sadness",
+  "anxiety",
+  "despair"
+);
+for (let a = 0; a < allemotions.length; a++) {
+  document.write(" " + allemotions[a] + " ");
+}
+
+document.write("</br>");
+
+document.write("</br>");
+
+document.write("</br>");
+
+// JOIN MAKES SEPRATE VALUES INTO A SINGLE STRING
+
+let joiningEmotions = allemotions.join("/");
+for (let a = 0; a < joiningEmotions.length; a++) {
+  document.write(" " + joiningEmotions[a] + " ");
+}
+
+document.write("</br>");
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING SLICE AND SPLICE
+let understandSlice = ["Rabail", "Zaheer", "Kalhoro"];
+
+let understandSlice1 = understandSlice.slice(0);
+document.write(understandSlice1 + "</br> </br>");
+
+document.write("</br>");
+document.write("</br>");
+
+let understandSplice = ["Rabail", "Sharjeel", "Komal", "Adeel", "Nabeel"];
+document.write(understandSplice);
+
+document.write("</br>");
+document.write("</br>");
+
+understandSplice.splice(2, 0, "Arsal", "Ursula");
+document.write(understandSplice);
+
+document.write("</br>");
+document.write("</br>");
+
+document.write("</br>");
+document.write("</br>");
