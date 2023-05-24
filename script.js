@@ -585,4 +585,49 @@ for (let a = 1; a < 10; a++) {
   }
 }
 
-// NESTED LOOPS
+// NESTED LOOPS - PRINTING NUMBERS FROM 1 - 100 IN TABULAR FORM
+
+for (let a = 1; a <= 100; a = a + 10) {
+  for (let b = a; b < a + 10; b++) {
+    document.write(b + "  ");
+  }
+  document.write("</br>");
+}
+
+// NESTED LOOPS - PRINTING A PATTERN
+
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; (j = i); j++) {
+    document.write(b);
+  }
+  document.write("</br>");
+}
+
+// NESTED LOOPS - PRINTING A DIFFERENT PATTERN
+for (let i = 1; i <= 5; i++) {
+  for (let j = 1; j <= i; j++) {
+    document.write(a);
+  }
+
+  document.write("</br>");
+}
+
+// NESTED LOOPS - PRINTING ANOTHER PATTERN
+
+for (let i = 5; i >= 1; i--) {
+  for (let j = 1; j <= i; j++) {
+    document.write(a);
+  }
+
+  document.write("</br>");
+}
+
+// NESTED LOOPS - PRINTING ANOTHER PATTERN
+
+for (let i = 5; i >= 1; i--) {
+  for (let j = i; j >= i; j++) {
+    document.write(b);
+  }
+
+  document.write("</br>");
+}
