@@ -432,3 +432,157 @@ document.write("</br>");
 hello();
 
 // FUNCTIONS WITH PARAMETERS
+
+function sum(a, b) {
+  console.log(a + b);
+}
+
+sum(10, 20);
+
+function greetings(fname1, lname1) {
+  console.log(`Hello ${fname1} ${lname1}`);
+}
+
+greetings(`Rabail`, `Zaheer`);
+
+// ADDING DEFAULT VALUES
+
+function hello1(fname = "Sadaruddin", lname = "Charan") {
+  console.log(`Hello ${fname} ${lname}`);
+}
+
+hello1(); // if someone doesn't write the needed argumnents then the default values will be printed
+
+// FUNCTIONS WITH RETURN VALUES
+
+function fullName(fname2 = "Jawad", lname2 = "Charan") {
+  let a = fname2 + " " + lname2;
+  return a;
+}
+
+let fn = fullName("Rabail", "Zaheer");
+console.log(fn);
+
+// SECOND EXAMPLE
+function addmarks(math, eng, sc) {
+  var s = math + eng + sc;
+
+  return s;
+}
+
+function percentage(tt) {
+  var per = (tt / 100) * 100;
+  console.log(per);
+}
+var total = addmarks(80, 80, 80);
+
+percentage(total);
+
+// GLOBAL AND LOCAL VARIABLES
+
+// Variables outside the function is a global variable and inside the function is the local variable
+
+let myName = "Rabail";
+
+function hellow() {
+  console.log(myName);
+}
+
+hello();
+console.log(myName);
+
+// EVENTS
+
+/* Mouse Events
+
+Click - onclick,
+Double Click - ondblclick,
+Right Click - oncontextmenu,
+Mouse hover - onmouseenter,
+Mouse Out - onmouseout,
+Mouse Down - onmousedown,
+Mouse Up - onmouseup */
+
+/* Keyboard Events
+
+Key Press - onkeypress, - this event only works in forms and on body tags
+Key Up - onkeyup */
+
+/* Window Events
+
+Load - onload,
+Unload - onunload,
+Resize - onresize,
+Scroll - onscroll */
+
+function welcome() {
+  document.write(`Welcome to my site!`);
+}
+
+// WHILE LOOP
+
+let wl = 1;
+while (wl <= 10) {
+  console.log(wl + ") Rabail Zaheer </br>");
+  wl = wl + 1;
+}
+
+// DO WHILE LOOP
+
+let dw = 1;
+
+do {
+  console.log(dw + ") Sadaruddin Charan </br>");
+  dw++;
+} while (dw <= 10);
+
+// FOR LOOP
+
+for (let a = 1; a <= 10; a++) {
+  console.log(a + ") Yahoo Baba Youtube Channel has amazing tutorials! </br>");
+}
+
+// BREAK AND CONTINUE STATEMENT
+
+// WITHOUT ANY BREAK OR CONTINUE STATEMENT
+for (let a = 1; a <= 10; a++) {
+  if (a == 3) {
+    document.write("Hey : " + a + "</br>");
+  }
+  document.write("Number :" + a + "</br>");
+}
+
+// WITH CONTINUE STATEMENT
+for (let a = 1; a <= 10; a++) {
+  if (a == 3) {
+    document.write("Hey : " + a + "</br>");
+    continue;
+  }
+  document.write("Number :" + a + "</br>");
+}
+
+// WITH BREAK STATEMENT
+
+for (let a = 1; a <= 10; a++) {
+  if (a == 3) {
+    document.write("Hey : " + a + "</br>");
+    break;
+  }
+  document.write("Number :" + a + "</br>");
+}
+
+// EVEN AND ODD NUMBER USING LOOPS
+
+for (let a = 1; a < 10; a++) {
+  if (a % 2 == 0) {
+    document.write(a + "</br>");
+  }
+}
+
+for (let a = 1; a < 10; a++) {
+  if (a % 2 !== 0) {
+    document.write(a + "</br>");
+  }
+}
+
+// NESTED LOOPS
