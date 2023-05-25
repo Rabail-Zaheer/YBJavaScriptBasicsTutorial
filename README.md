@@ -2,22 +2,21 @@
 Complete JavaScript Basics - Followed by a tutorial on YouTube
 
 
-JavaScript Basics Tutorial
+**JavaScript Basics Tutorial**
+
 Welcome to the JavaScript Basics Tutorial repository! This tutorial is designed to help beginners grasp the fundamentals of JavaScript programming. Whether you're new to programming or looking to refresh your skills, this tutorial will provide you with a solid foundation to build upon.
 
-Table of Contents
+**Table of Contents**
 Introduction
 Getting Started
 Topics Covered
 Usage
 Contributing
 
-**
-Introduction**
+**Introduction**
 In this tutorial, we dive into the world of JavaScript and explore its core concepts, syntax, and functionality. By following this tutorial, you will gain a solid understanding of how JavaScript works and how to use it to build interactive web applications.
 
-**
-Getting Started**
+**Getting Started**
 To get started with this tutorial, follow these simple steps:
 
 Clone or download the repository to your local machine.
@@ -45,8 +44,7 @@ Events
 Each topic is accompanied by code examples and explanations to help you grasp the concepts more effectively.
 
 
-**
-Usage**
+**Usage**
 Feel free to use this tutorial in any way that benefits your learning process. You can follow along with the code examples, modify them, or experiment with your own variations. The code is well-commented to provide guidance and enhance your understanding.
 
 **Contributing**
