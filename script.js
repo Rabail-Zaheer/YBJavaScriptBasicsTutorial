@@ -900,3 +900,56 @@ document.write("</br>");
 document.write("</br>");
 
 // LASTINDEXOF FUNCTION
+
+var checklastindex = indexArry.lastIndexOf("Rabail");
+
+document.write(checklastindex + "</br> </br>");
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING ARRAY INCLUDES METHOD
+// Includes method is case sensitive and matched the exact value
+
+let newaryy = ["Chrome", "Edge", "Safari"];
+
+document.write(newaryy + "</br> </br>");
+
+let newaryy1 = newaryy.includes("Opera");
+
+document.write(newaryy1 + "</br> </br>"); // returns false as there is no Opera in the array
+
+let newaryy2 = newaryy.includes("Safari");
+document.write(newaryy2 + "</br> </br>"); // returns true
+
+let newaryy3 = newaryy.includes("safari");
+document.write(newaryy3 + "</br> </br>"); // returns false as the "S" that we are trying to match is the small character
+
+// UNDERSTANDING SOME() AND EVERY()
+
+// some() - can return true even if a single value is true or match the test function
+let ages = [10, 18, 2, 15];
+
+document.write(ages + "</br> </br>");
+
+var agescheck = ages.some(checkAdult);
+document.write(agescheck + "</br> </br>");
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+// every() - would return true only if all the values are true or match the test function
+
+let everyages = [10, 18, 2, 15];
+
+document.write(everyages + "</br> </br>");
+
+var agescheck1 = everyages.every(checkAdult1);
+document.write(agescheck1 + "</br> </br>");
+
+function checkAdult1(age) {
+  return age >= 18;
+}
+
+// UNDERSTANDING FIND() AND FINDINDEX METHODS
