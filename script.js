@@ -953,3 +953,84 @@ function checkAdult1(age) {
 }
 
 // UNDERSTANDING FIND() AND FINDINDEX METHODS
+// It finds the first value to be check and returns the value it doesnot check even if there are more values
+// FindIndex works the same but it just returns the index instead of the value.
+
+let agee = [10, 20, 30, 50];
+document.write(agee + "</br> </br>");
+
+let findage = agee.find(ageadult);
+
+document.write(findage + "</br> </br>"); // returns 20 only not other adult age values
+
+function ageadult(age) {
+  return age >= 18;
+}
+
+let findage1 = agee.findIndex(ageadult);
+document.write(findage1 + "</br> </br>"); // returns 1
+
+// UNDERSTANDING FILTER() - It returns a new array according to the condition
+
+let months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+document.write(months + "</br> </br>");
+
+let findsecondhalf = months.filter(secondhalfOfyear);
+
+document.write(findsecondhalf + "</br> </br>");
+
+function secondhalfOfyear(month) {
+  return month >= 6;
+}
+
+// UNDERSTANDING STRING() VALUEOF() AND FILL() METHODS
+
+//tostring() method converts the existing array into a string and returns the result and then no Array methods would be applied on that string as it is converted to a string now
+
+let someNames = ["Sanjay", "Aman", "Rehman", "Neha"];
+
+document.write(someNames);
+
+document.write("</br>");
+document.write("</br>");
+
+someNames.toString();
+document.write(someNames);
+
+document.write("</br>");
+document.write("</br>");
+
+// VALUE OF IS SIMPLE - YOU CAN USE OR CAN NOT USE IT - IT IS SAME AS DISPLAYING THE VALUE OF AN ARRAY THROUGH DOCUMENT.WRITE
+
+document.write(someNames.valueOf());
+
+// The fill methos is simple it will fill the whole array with the static value provided in the fill function
+someNames.fill("Blue");
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING FOR EACH METHOD
+
+let somevalues = ["blue", "lilac", "green", "gold", "black", "white"];
+
+somevalues.forEach(function (value, index) {
+  document.write(index + " : " + value + "</br>");
+}); // this is one way of making using this method
+
+document.write("</br>");
+document.write("</br>");
+
+// this is the also a way of using this method - similar to what we have done before in our previous methods
+
+somevalues.forEach(loop);
+
+function loop(value, index) {
+  document.write(index + " : " + value + "</br>");
+}
+
+document.write("</br>");
+document.write("</br>");
+
+// OBJECTS
