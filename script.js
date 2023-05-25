@@ -861,3 +861,42 @@ document.write("</br>");
 
 document.write("</br>");
 document.write("</br>");
+
+// UNDERSTANDING IS ARRAY METHOD
+
+var arr1 = ["Rabail", "Zaheer", "Kalhoro"];
+
+document.write(arr1 + "</br> </br>");
+
+// var isarr = Array.isArray(arr1);
+
+if (Array.isArray(arr1)) {
+  document.write("This is an Array");
+} else {
+  document.write("This is not an Array");
+}
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING INDEXOF AND LASTINDEXOF METHODS
+
+let indexArry = ["Rabail", "Adeel", "Nabeel", "Komal", "Rabail"];
+
+document.write(indexArry + "</br> </br>");
+
+var checkindex = indexArry.indexOf("Rabail", 2);
+
+document.write(checkindex + "</br> </br>");
+
+document.write("</br>");
+document.write("</br>");
+
+var checkindex = indexArry.indexOf("Arsal");
+
+document.write(checkindex + "</br> </br>");
+
+document.write("</br>");
+document.write("</br>");
+
+// LASTINDEXOF FUNCTION
