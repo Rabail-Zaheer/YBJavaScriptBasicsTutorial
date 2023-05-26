@@ -1266,3 +1266,83 @@ document.write("</br>");
 document.write("</br>");
 
 // UNDERSTANDING THE SEARCH() FUNCTION
+
+let searchfunc = str.search("is");
+
+document.write(searchfunc);
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING THE MATCH() FUNCTION
+
+let matchfunc = "JavaScript is a GREAT is Language";
+
+let undersmatch = matchfunc.match(/is/g);
+
+document.write(undersmatch);
+document.write("</br>");
+document.write("</br>");
+
+let undersmatch1 = matchfunc.match(/is a/g);
+
+document.write(undersmatch1);
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING INDEXOF() AND LASTINDEXOF() FUNCTION
+
+var indexoffunction = matchfunc.indexOf("is");
+
+document.write(indexoffunction);
+document.write("</br>");
+document.write("</br>");
+
+var lastindexoffunction = matchfunc.lastIndexOf("is");
+document.write(lastindexoffunction);
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING REPLACE() FUNCTION
+document.write(matchfunc);
+
+document.write("</br>");
+document.write("</br>");
+
+var replfunc = matchfunc.replace("JavaScript", "PHP");
+
+document.write(replfunc);
+
+document.write("</br>");
+document.write("</br>");
+
+let newstr = "      JavaScript      ";
+
+//alert(newstr);
+
+let newstr1 = newstr.trim();
+// alert(newstr1);
+
+// UNDERSTANDING CHARAT() METHOD
+
+let mystr = "Hello, I am good. What about you?";
+
+var charstr = mystr.charAt(8);
+
+document.write(charstr);
+
+document.write("</br>");
+document.write("</br>");
+
+var ascode = mystr.charCodeAt(1);
+document.write(ascode);
+
+document.write("</br>");
+document.write("</br>");
+
+var ascharcode = mystr.fromCharCode(65);
+document.write(ascharcode);
+
+document.write("</br>");
+document.write("</br>");
