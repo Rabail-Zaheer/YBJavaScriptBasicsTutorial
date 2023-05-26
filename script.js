@@ -1034,3 +1034,101 @@ document.write("</br>");
 document.write("</br>");
 
 // OBJECTS
+
+let firstObj = {
+  firstName: "Rabail",
+  lastName: "Zaheer",
+  age: 23,
+  email: "hello@123.com",
+
+  favMovies: ["HarryPotter", "BeautyAndTheBeast", "SnowWhite"],
+  living: {
+    city: "Hyderabad",
+    country: "Pakistan",
+  },
+  salary: function () {
+    return 75000;
+  },
+  fullname: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+
+document.write("</br>");
+document.write("</br>");
+
+document.write(firstObj.firstName);
+
+console.log(firstObj);
+document.write("</br>");
+document.write("</br>");
+
+document.write(firstObj.favMovies[0]); // displaying the value of an array inside the object
+
+document.write("</br>");
+document.write("</br>");
+
+document.write(firstObj.salary()); // printing a function (method) inside of an object
+
+document.write("</br>");
+document.write("</br>");
+
+document.write(firstObj.fullname()); // printing a method which uses the property names of that object and uses the "this" keyword
+
+document.write("</br>");
+document.write("</br>");
+
+document.write(firstObj.living.city); // printing the object property inside an object
+
+document.write("</br>");
+document.write("</br>");
+
+// SECOND METHOD OF CREATING AN OBJECT
+
+let secondObject = new Object();
+
+console.log(secondObject);
+
+secondObject.firstName = "Rabail";
+secondObject.lastName = "Zaheer";
+secondObject.age = 23;
+
+console.log(secondObject);
+
+document.write(secondObject.age); //
+document.write(secondObject["age"]); // this is the beacket method of displaying a property of an object
+document.write("</br>");
+document.write("</br>");
+
+console.log(secondObject);
+
+// ARRAY OF OBJECT
+
+let student = [
+  { name: "Rabail", age: 15 },
+  { name: "Adeel", age: 10 },
+  { name: "Nabeel", age: 8 },
+];
+
+console.log(student);
+document.write("</br>");
+document.write("</br>");
+
+for (a = 0; a < student.length; a++) {
+  document.write(`${student[a].name + " " + student[a].age}</br>`);
+}
+document.write("</br>");
+document.write("</br>");
+
+// CONST VARIABLES WITH ARRAY AND OBJECTS
+
+const newarray = [10, 20, 30];
+
+// newarray = [20, 40, 80]; - this will generate an error as const variable do not let you reassign the array, however you can manipulate the values of the array by changing the values at particular indexes- such as:
+
+console.log(newarray);
+
+newarray[1] = 40; // this will change the value at 1 index to 40
+newarray[2] = 35; // this will change the value at the 2 indext to 35
+
+console.log(newarray);
