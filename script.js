@@ -1132,3 +1132,83 @@ newarray[1] = 40; // this will change the value at 1 index to 40
 newarray[2] = 35; // this will change the value at the 2 indext to 35
 
 console.log(newarray);
+
+const newobj = {
+  name: "Rabail_Zaheer",
+  age: 23,
+};
+
+console.log(newobj);
+
+/* 
+newobj = {
+  name: "Nabeel Zaheer",
+  age: 19,
+}; */
+
+// this will generate an error as const variable do not let you reassign the array, however you can manipulate the values of the object by changing the values at particular property names and their key value pairs - such as:
+
+newobj.name = "Rabail Zaheer Kalhoro";
+
+console.log(newobj);
+
+// FOR IN LOOP - this loop has been specifically made for the printing of the object
+
+let myobj = {
+  fname: "Rabail",
+  lname: "Zaheer",
+  age: "23",
+  email: "hello@yahoo.com",
+  favColor: "blue",
+  favCartoon: "babylooneytunes",
+};
+
+document.write("</br>");
+document.write("</br>");
+for (var key in myobj) {
+  document.write(myobj[key] + "</br>"); // without property/key names
+
+  document.write(key + " : " + myobj[key] + "</br>"); // with property/key names
+}
+
+document.write("</br>");
+document.write("</br>");
+
+// JAVASCRIPT MAP METHOD
+
+let myarry = [11, 4, 9, 16];
+document.write(myarry); // before manipulation
+
+document.write("</br>");
+document.write("</br>");
+
+var mynewarry = myarry.map(test);
+
+document.write(mynewarry); // after manipulation / calculation
+function test(x) {
+  return x * 10;
+}
+
+document.write("</br>");
+document.write("</br>");
+
+// USING  MAP METHODS ON THE ARRAY OF OBJECTS
+
+var myaryobj = [
+  { fname: "Rabail", lname: "Zaheer" },
+  { fname: "Zaheer", lname: "Ahmed" },
+  { fname: "Nargis", lname: "Zaheer" },
+];
+
+let myaryobjmap = myaryobj.map(test2);
+
+document.write(myaryobjmap);
+
+function test2(x) {
+  return x.fname + " " + x.lname + "</br>";
+}
+
+document.write("</br>");
+document.write("</br>");
+
+// JAVASCRIPT STRING METHODS
