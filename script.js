@@ -1212,3 +1212,57 @@ document.write("</br>");
 document.write("</br>");
 
 // JAVASCRIPT STRING METHODS
+
+let str = "JavaScript is an amazing Langugage!";
+
+var str2 = str.length;
+
+document.write(str2); // displays the characters of the string
+
+document.write("</br>");
+document.write("</br>");
+
+// toUpperCase() and toLowerCase()
+
+var upper = str.toUpperCase();
+var lower = str.toLowerCase();
+
+document.write(upper + "</br>" + lower);
+
+document.write("</br>");
+document.write("</br>");
+
+// includes()
+
+var incl = str.includes("amazing"); // returns true
+var incl2 = str.includes("AMAZING"); // returns false
+
+document.write(incl + " " + incl2);
+// the includes() function is case sensitive
+
+document.write("</br>");
+document.write("</br>");
+
+// startesWith() and endsWith() - both case sensitive
+
+let startfind = str.startsWith("JavaScript"); // returns true.
+
+let startfind1 = str.startsWith("javascript"); // returns false
+
+document.write(startfind + "</br>" + startfind1);
+
+document.write("</br>");
+document.write("</br>");
+
+let endfind = str.endsWith("Langugage!"); // returns true.
+
+let endfind1 = str.endsWith("langugage"); // returns false
+
+let endfind2 = str.endsWith("age!"); // also returns true here as it find "age" in the last and this same goes for the startsWith() function
+
+document.write(endfind + "</br>" + endfind1 + "</br>" + endfind2);
+
+document.write("</br>");
+document.write("</br>");
+
+// UNDERSTANDING THE SEARCH() FUNCTION
