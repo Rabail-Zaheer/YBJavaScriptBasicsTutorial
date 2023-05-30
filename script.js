@@ -1326,24 +1326,138 @@ let newstr1 = newstr.trim();
 
 // UNDERSTANDING CHARAT() METHOD
 
-let mystr = "Hello, I am good. What about you?";
+let mystr = "JavaScript is a GREAT Language";
 
-var charstr = mystr.charAt(8);
+let charstr = mystr.charAt(3); // returns the character at the specified position of the index on the webp page
 
 document.write(charstr);
 
 document.write("</br>");
 document.write("</br>");
 
-let ascode = mystr.charCodeAt(1);
+console.log(charstr); // returns the character at the specified position of the index on the console
 
-document.write(ascode);
+let newstring = "JavaScript is a GREAT language, HELLO WORLD";
 
-document.write("</br>");
-document.write("</br>");
+let charcoat = newstring.charCodeAt(1);
+console.log(charcoat); // this returns the asci number of the specified index of a string .
 
-let ascharcode = mystr.fromCharCode(65);
-document.write(ascharcode);
+let charcoat1 = newstring.charCodeAt(1);
+console.log(charcoat1); // this returns the asci number of the specified index of a string .
 
-document.write("</br>");
-document.write("</br>");
+let newstring1 = String.fromCharCode(65); // this function is used with the string method to return the character at that particular number/ascii code
+console.log(newstring1);
+
+// THE CONCAT FUNCTION
+
+let string = "Hello world! ";
+let string2 = "Let's learn JavaScript";
+let string3 = " Happy coding bud!";
+
+let concatstring = string.concat(string2);
+console.log(concatstring);
+
+// now what if we have three strings?
+
+let concatmultistring = string.concat(string2, string3);
+console.log(concatmultistring);
+
+let learnsplit = string.split(" ");
+console.log(learnsplit); // returns an array by spliting the specified character - in this case the specified character is space;
+
+// UNDERSTANDIN REPEAT
+
+let strirepeat = string2.repeat(4);
+
+// this function repeats the string
+
+console.log(strirepeat); // this function repeats the string the number of time specified.
+
+// UNDERSTANDING SLICE
+
+let slicestring = string.slice(3, 15);
+
+console.log(slicestring);
+
+// UNDERSTANDING SUBSTR
+
+let substrfunc = string2.substr(3, 5); // it is now a deprecated feature for the legacy purposes.
+
+console.log(substrfunc);
+
+// UNDERSTANDING SUBSTRING()
+
+let substringfunc = string3.substring(3, 7);
+console.log(substringfunc);
+
+// UNDERSTANDING toString()
+// converts the value of any numeric or anyother datatype into a string
+
+let mynum = 50;
+
+console.log(mynum + 20); // return the addition of two numbers
+let mynumtostring = mynum.toString();
+
+console.log(mynumtostring + 20); // returns a string
+
+// UNDERSTANDING THE VALUEOF() FUNCTION
+// IT RETURNS THE DEFAULT VALUE OF THE STRING
+
+console.log(mynumtostring.valueOf());
+
+// UNDERSTANDING THE NUMBER METHODS
+
+let mynewnum = "99";
+
+console.log(mynewnum + 1);
+
+let strtonum = Number(mynewnum);
+
+console.log(strtonum + 1);
+
+let mynewbooltonum = true;
+let mynewbooltonum2 = false;
+console.log(Number(mynewbooltonum)); // returns 1
+
+console.log(Number(mynewbooltonum2)); // returns 0
+
+// UNDERSTANDING PARSEINT()
+
+let newint = "88 99 77";
+
+console.log(newint);
+
+console.log(parseInt(newint)); // returns the first integer value found
+
+let newfloat = "99 99 77";
+
+console.log(newfloat);
+
+console.log(parseFloat(newfloat));
+
+// UNDERSTANDING ISFINITE() AND ISINTEGER()
+
+let isfinorinfini = Infinity;
+
+console.log(Number.isFinite(isfinorinfini)); // returns false
+
+let isfinorinfini1 = 20;
+console.log(Number.isFinite(isfinorinfini1)); // returns true;
+
+let isfinorinfini2 = "200";
+console.log(Number.isFinite(isfinorinfini2)); // returns false
+
+let isfinorinfini3 = "hello";
+
+console.log(Number.isFinite(isfinorinfini3)); // returns false
+
+console.log(Number.isInteger(isfinorinfini)); // false
+console.log(Number.isInteger(isfinorinfini1)); // true
+console.log(Number.isInteger(isfinorinfini2)); // false
+console.log(Number.isInteger(isfinorinfini3)); // false
+
+let newnum = 5.56789;
+
+console.log(newnum.toFixed(2)); // after the decimal two values will be returns after the rounding off 5.57
+
+console.log(newnum.toPrecision(2)); // returns two values only after rounding off 5.6
