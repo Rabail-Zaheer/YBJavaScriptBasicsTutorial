@@ -1335,13 +1335,14 @@ document.write(charstr);
 document.write("</br>");
 document.write("</br>");
 
-var ascode = mystr.charCodeAt(1);
+let ascode = mystr.charCodeAt(1);
+
 document.write(ascode);
 
 document.write("</br>");
 document.write("</br>");
 
-var ascharcode = mystr.fromCharCode(65);
+let ascharcode = mystr.fromCharCode(65);
 document.write(ascharcode);
 
 document.write("</br>");
