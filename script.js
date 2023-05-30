@@ -1461,3 +1461,115 @@ let newnum = 5.56789;
 console.log(newnum.toFixed(2)); // after the decimal two values will be returns after the rounding off 5.57
 
 console.log(newnum.toPrecision(2)); // returns two values only after rounding off 5.6
+
+// UNDERSTANDING MATH METHODS
+
+//ceil() and floor()
+
+let afunc = Math.ceil(5.2);
+console.log(afunc);
+let afunct = Math.floor(5.2);
+console.log(afunct);
+
+// round() trunc()
+
+console.log(Math.round(0.6));
+console.log(Math.round(0.4));
+console.log(Math.round(0.5));
+
+console.log(Math.trunc(2.54));
+
+console.log(Math.trunc(3.654));
+
+console.log(Math.trunc(7.854));
+
+// max() min()
+
+console.log(Math.max(8, 5, 10, 100, 298));
+
+console.log(Math.min(8, 5, 10, 100, 298));
+
+// sqrt() and cbrt()
+
+console.log(Math.sqrt(64));
+
+console.log(Math.sqrt(81));
+
+console.log(Math.sqrt(25));
+
+console.log(Math.cbrt(125));
+
+console.log(Math.cbrt(27));
+
+console.log(Math.cbrt(1000));
+
+// pow(x,y)
+
+console.log(Math.pow(4, 3));
+
+console.log(Math.pow(2, 3));
+
+console.log(Math.pow(2, 5));
+
+// random()
+
+console.log(Math.floor(Math.random() * 10) + 1);
+
+// abs(x) - absolute value
+
+console.log(Math.abs(5.25));
+
+console.log(Math.abs(0)); // return zero
+
+console.log(Math.abs(8)); // returns 8
+
+console.log(Math.abs(null)); // returns 0
+
+console.log(Math.abs("hello")); // returns NaN
+
+console.log(Math.PI); // returns the value of PI
+
+// UNDERSTANDING DATE METHODS
+
+let now = new Date();
+console.log(now);
+
+// DATE RELATED FUNCTIONS
+console.log(now.toDateString());
+
+console.log(now.getDate());
+
+console.log(now.getFullYear());
+
+console.log(now.getMonth());
+
+console.log(now.getDay());
+
+// TIME RELATED FUNCTIONS
+
+console.log(now.getHours());
+
+console.log(now.getMinutes());
+
+console.log(now.getSeconds());
+
+console.log(now.getMilliseconds());
+
+// FUNCTIONS RELATED WITH SET
+
+let now1 = new Date();
+now1.setDate(31);
+console.log(now1);
+
+now1.setFullYear(2024);
+
+console.log(now1);
+now1.setMonth(6);
+
+console.log(now1);
+
+now1.setHours(23);
+
+console.log(now1);
+
+console.log(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
