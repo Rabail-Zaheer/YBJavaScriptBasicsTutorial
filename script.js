@@ -1573,3 +1573,44 @@ now1.setHours(23);
 console.log(now1);
 
 console.log(now.getDate() + "/" + now.getMonth() + "/" + now.getFullYear());
+
+// HTML DOM TREE
+
+/* DOCUMNET
+      root (html)
+      
+      <head>     <body>
+      
+      <title>     <nav>   <h1>
+                    <a> */
+
+// DOM TARGET METHODS
+
+/* we can target an HTML element with some methods - we have 3 ways to target an HTML element
+
+BY Id -> document.getElementById(id)
+
+BY Class Name -> document.getElementsByClassName(classname)
+
+BY Tag Name -> document.getElementsByTagName(tagname)
+
+*/
+
+/* OTHER DOM TARGETING METHODS
+
+document
+document.all
+document.documentElement
+document.head
+document.title
+document.body
+document.body
+document.images
+document.anchors
+document.links
+document.forms
+document.doctype
+document.URL
+document.baseURI
+document.domain
+*/

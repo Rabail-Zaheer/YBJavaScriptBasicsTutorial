@@ -1,0 +1,42 @@
+body {
+  box-sizing: border-box;
+}
+#wrapper {
+  width: 50%;
+  margin: auto;
+  border: 2px solid black;
+  position: relative;
+}
+
+#header {
+  background-color: red;
+  color: white;
+  font-size: large;
+  padding: 2px;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+#menu {
+  position: absolute;
+  padding: 8px;
+  margin: 0;
+  background-color: violet;
+  border-bottom: 1px solid black;
+}
+
+#menu ul li {
+  float: left;
+  display: block;
+  list-style-type: none;
+  padding: 2px;
+  margin: 0;
+}
+
+#menu ul li a {
+  color: white;
+}
+
+#content h2 {
+  display: inline-block;
+}
