@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <script src="DOMJs.js"></script>
+
     <title>BASIC HTML LAYOUT</title>
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
+      <div
+        id="header"
+        class="abc"
+        style="border: 1px solid blue"
+        data-custom-attr="custom-value"
+        data-another-attr="another-value"
+      >
         <h1>Rabail Zaheer</h1>
       </div>
       <div id="menu">
@@ -25,20 +31,31 @@
       <div id="content-container">
         <div id="content">
           <h2>Sub Heading</h2>
-          <img src="images/flower.jpg" alt="flower image" width="200px" />
+          <img
+            src="flower.jpeg"
+            alt="flower image"
+            width="100px"
+            height="100px"
+          />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             cupiditate ab nostrum dolores sequi perferendis porro quidem autem
             itaque nulla?
           </p>
 
-          <ul id="list">
+          <ul class="list">
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem ipsum dolor sit amet.</li>
           </ul>
+
+          <p class="list">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto
+            debitis sunt delectus eveniet voluptates ipsam alias aliquid officia
+            quia culpa?
+          </p>
         </div>
 
         <div id="sidebar">
@@ -52,5 +69,7 @@
       </div>
       <div id="footer">rabailzaheer@copyright 2023.</div>
     </div>
+
+    <script src="DOMJs.js"></script>
   </body>
 </html>
