@@ -19,6 +19,20 @@ body {
   border: 1px solid black;
 }
 
+#header.xyz {
+  background-color: yellow;
+  color: black;
+}
+
+#header.color {
+  background-color: chocolate;
+  color: brown;
+}
+
+#header.border {
+  border: 10px dotted green;
+}
+
 #menu {
   background-color: blueviolet;
   border: 1px solid black;

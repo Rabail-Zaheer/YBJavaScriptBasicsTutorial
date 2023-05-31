@@ -128,3 +128,87 @@ innerHTML
 setAttribute
 Attribute
 removeAttribute */
+
+//console.log((document.getElementById("header").innerText = "Wow!"));
+
+//console.log(document.getElementById("header").innerHTML = "Rabail Zaheer Kalhoro");
+
+document.getElementById("header").setAttribute("class", "xyz");
+document
+  .getElementById("header")
+  .setAttribute("style", "border: 3px dashed purple");
+
+// changing class using only attributes method
+
+document.getElementById("header").attributes[1].value = "efg";
+
+// remove attribute
+
+document.getElementById("header").removeAttribute("style");
+
+document.getElementById("header").removeAttribute("class");
+
+// DOM querySelector() and querySelectorall()
+
+//document.querySelector("#header").innerHTML = "<h1>WELCOME</h1>";
+
+console.log(document.querySelector(".list")); // will return the first class with the respective name found.
+
+console.log(document.querySelectorAll(".list")); // will return all the classes with the selected name.
+
+console.log(document.querySelectorAll(".list")[1]); // will return the .list class found at the 1 index
+
+console.log(document.querySelectorAll(".list")[1].innerHTML); // will return the innerHTML of the .list class found at the 1 index
+
+console.log(document.querySelectorAll(".list")[1].innerText); // will return the innerText of the .list class found at the 1 index
+
+console.log(document.querySelectorAll("ul")[1]);
+
+console.log(document.querySelectorAll("ul")[2].innerHTML);
+
+console.log(document.querySelectorAll("#header h1")[0]);
+
+console.log(document.querySelectorAll("#header h1")[1]);
+
+console.log(document.querySelectorAll("#header h1")[2]);
+
+console.log(document.querySelectorAll("#header h1")[0].innerHTML);
+
+console.log(document.querySelectorAll("#header h1")[1].innerHTML);
+
+console.log(document.querySelectorAll("#header h1")[2].innerHTML);
+
+console.log(document.querySelectorAll("#header h1")[0].innerText);
+
+console.log(document.querySelectorAll("#header h1")[1].innerText);
+
+console.log(document.querySelectorAll("#header h1")[2].innerText);
+
+// DOM CSS STYLING METHODS
+
+/* Style
+className
+classList */
+
+// using style
+//console.log(document.querySelector("#header").style.border);
+
+// console.log((document.querySelector("#header").style.color = "tan"));
+
+// console.log(
+//   (document.querySelector("#header").style.backgroundColor = "white")
+// );
+
+// using className
+
+document.querySelector("#header").className = "color border";
+
+console.log((document.querySelector("#header").classList = "color border"));
+
+document.querySelector("#header").classList.add("newclass", "secondnewclass");
+
+console.log(document.querySelector("#header").classList);
+
+console.log(document.querySelector("#header").classList.remove("border"));
+
+console.log(document.querySelector("#header").classList);
