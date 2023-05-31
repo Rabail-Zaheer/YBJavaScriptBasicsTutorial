@@ -20,46 +20,65 @@ body {
 }
 
 #menu {
-  padding: 2px;
-  margin: 0px;
-  background-color: violet;
+  background-color: blueviolet;
   border: 1px solid black;
   display: flex;
   justify-content: flex-start;
 }
 
 #menu ul {
-  padding: 0;
+  padding: 0px;
+  margin: 0;
   display: flex;
   justify-content: flex-start;
   list-style: none;
 }
 
-#menu ul li {
-  padding: 2px;
-  margin: 0;
-}
-
 #menu ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
+  padding: 10px; /* Increase the padding to create a larger hover area */
+  margin: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  display: flex;
+  align-items: center;
 }
 
 #menu ul li a:hover {
-  color: black;
-  background-color: blueviolet;
+  color: white;
+  background-color: rgb(25, 11, 38);
 }
 
 #content-container {
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 #content {
   /* Additional styles for the content */
   flex: 1;
+  padding: 1px;
+  margin-left: 2px;
+  margin-top: 0;
 }
 
 #sidebar {
   /* Additional styles for the sidebar */
   flex: 0 0 30%; /* Adjust the width as needed */
+  padding: 1px;
+  margin-top: 0;
+  margin-bottom: 3px;
+  border-left: 1px solid black;
+  background-color: rgb(200, 147, 249);
+}
+#sidebar ul li a {
+  text-decoration: none;
+}
+
+#footer {
+  background-color: coral;
+  padding: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
