@@ -1,11 +1,13 @@
 body {
   box-sizing: border-box;
 }
+
 #wrapper {
   width: 50%;
   margin: auto;
   border: 2px solid black;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #header {
@@ -14,29 +16,50 @@ body {
   font-size: large;
   padding: 2px;
   margin: 0;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
 }
 
 #menu {
-  position: absolute;
-  padding: 8px;
-  margin: 0;
+  padding: 2px;
+  margin: 0px;
   background-color: violet;
-  border-bottom: 1px solid black;
+  border: 1px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menu ul {
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
 }
 
 #menu ul li {
-  float: left;
-  display: block;
-  list-style-type: none;
   padding: 2px;
   margin: 0;
 }
 
 #menu ul li a {
   color: white;
+  text-decoration: none;
 }
 
-#content h2 {
-  display: inline-block;
+#menu ul li a:hover {
+  color: black;
+  background-color: blueviolet;
+}
+
+#content-container {
+  display: flex;
+}
+
+#content {
+  /* Additional styles for the content */
+  flex: 1;
+}
+
+#sidebar {
+  /* Additional styles for the sidebar */
+  flex: 0 0 30%; /* Adjust the width as needed */
 }
