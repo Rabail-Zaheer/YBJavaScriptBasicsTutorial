@@ -209,6 +209,94 @@ document.querySelector("#header").classList.add("newclass", "secondnewclass");
 
 console.log(document.querySelector("#header").classList);
 
-console.log(document.querySelector("#header").classList.remove("border"));
+//console.log(document.querySelector("#header").classList.remove("border"));
 
 console.log(document.querySelector("#header").classList);
+
+// JAVASCRIPT - addEventListener method
+
+// ASSIGN EVENTS USING THE HTML DOM
+// document.getElementById(Id).onclick = functionName;
+
+// document.getElementById("header").onclick = abc;
+
+// function abc() {
+//   document.getElementById("header").style.background = "green";
+//   document.getElementById("header").style.color = "white";
+// }
+
+// DOM EVENT LISTERNER METHOD
+//document.getElementById(ID).addEventListerner("click", funtionName);
+//OR
+//document.getElementById(ID).addEventListener("click", function(){ statement });s
+
+document.getElementById("menu").addEventListener("mouseenter", changecolor);
+
+document.getElementById("menu").addEventListener("click", function () {
+  document.getElementById("menu").style.border = "5px solid blue";
+});
+
+function changecolor() {
+  document.getElementById("menu").style.background = "cornflowerblue";
+}
+
+document.getElementById("sidebar").addEventListener("dblclick", function () {
+  document.getElementById("sidebar").style.background = "palegreen";
+});
+
+document.getElementById("content").addEventListener("contextmenu", rightclick);
+
+function rightclick() {
+  document.getElementById("content").style.background = "mediumpurple";
+}
+
+document.getElementById("footer").addEventListener("mouseout", outmouse);
+
+function outmouse() {
+  document.getElementById("footer").style.background = "plum";
+}
+
+document.getElementById("sidebarlist").addEventListener("mousedown", downmouse);
+
+function downmouse() {
+  document.getElementById("sidebarlist").style.background = "mediumslateblue";
+}
+
+document.getElementById("content").addEventListener("mouseup", upmouse);
+
+function upmouse() {
+  document.getElementById("contentpara").style.color = "black";
+}
+
+document.getElementById("menu").addEventListener("mouseenter", changecolor);
+
+document.getElementById("menu").addEventListener("click", function () {
+  document.getElementById("menu").style.border = "5px solid blue";
+});
+
+// USING THIS KEYWORD
+
+document.getElementById("header").addEventListener("mouseenter", function () {
+  this.style.border = "10px solid white";
+});
+
+//USECAPTURE
+
+// addEventListener(event, function, useCapture)
+
+// the use capture returns two values only, true and false
+
+// removeEventListener() method
+
+document.getElementById("header").addEventListener("mouseenter", abc);
+
+function abc() {
+  document.getElementById("header").style.background = "green";
+  document.getElementById("header").style.color = "white";
+}
+
+document.getElementById("header").addEventListener("dblclick", removingevent);
+
+function removingevent() {
+  document.getElementById("header").removeEventListener("mouseenter", abc);
+}

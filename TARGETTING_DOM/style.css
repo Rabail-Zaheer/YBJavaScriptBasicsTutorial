@@ -75,6 +75,12 @@ body {
   padding: 1px;
   margin-left: 2px;
   margin-top: 0;
+  background-color: lightcoral;
+}
+
+#contentpara {
+  color: white;
+  font-size: large;
 }
 
 #sidebar {
@@ -90,6 +96,9 @@ body {
   text-decoration: none;
 }
 
+#sidebarlist {
+  background-color: white;
+}
 #footer {
   background-color: coral;
   padding: 2px;
