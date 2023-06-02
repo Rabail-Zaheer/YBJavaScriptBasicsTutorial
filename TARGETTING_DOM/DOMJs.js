@@ -201,11 +201,11 @@ classList */
 
 // using className
 
-document.querySelector("#header").className = "color border";
+// document.querySelector("#header").className = "color border";
 
-console.log((document.querySelector("#header").classList = "color border"));
+// console.log((document.querySelector("#header").classList = "color border"));
 
-document.querySelector("#header").classList.add("newclass", "secondnewclass");
+// document.querySelector("#header").classList.add("newclass", "secondnewclass");
 
 console.log(document.querySelector("#header").classList);
 
@@ -250,12 +250,6 @@ function rightclick() {
   document.getElementById("content").style.background = "mediumpurple";
 }
 
-document.getElementById("footer").addEventListener("mouseout", outmouse);
-
-function outmouse() {
-  document.getElementById("footer").style.background = "plum";
-}
-
 document.getElementById("sidebarlist").addEventListener("mousedown", downmouse);
 
 function downmouse() {
@@ -276,9 +270,10 @@ document.getElementById("menu").addEventListener("click", function () {
 
 // USING THIS KEYWORD
 
-document.getElementById("header").addEventListener("mouseenter", function () {
+/* document.getElementById("header").addEventListener("mouseenter", function () {
   this.style.border = "10px solid white";
 });
+ */
 
 //USECAPTURE
 
@@ -288,15 +283,74 @@ document.getElementById("header").addEventListener("mouseenter", function () {
 
 // removeEventListener() method
 
-document.getElementById("header").addEventListener("mouseenter", abc);
+document.getElementById("header").addEventListener("mouseleave", abc);
 
 function abc() {
   document.getElementById("header").style.background = "green";
   document.getElementById("header").style.color = "white";
 }
 
-document.getElementById("header").addEventListener("dblclick", removingevent);
+document.addEventListener("click", removingevent);
 
 function removingevent() {
-  document.getElementById("header").removeEventListener("mouseenter", abc);
+  document.getElementById("header").removeEventListener("mouseleave", abc);
 }
+
+// CLASS LIST METHODS/Class
+
+/* add, remove, contains(class), toggle(class), item(index) */
+
+// add and remove
+
+document.getElementById("header").addEventListener("contextmenu", newclass12);
+
+function newclass12() {
+  document.getElementById("header").classList.add("color");
+}
+
+// remove
+
+document.getElementById("menu").addEventListener("contextmenu", removingaclass);
+
+function removingaclass() {
+  document.getElementById("menu").classList.remove("blue");
+}
+
+// toggle
+
+document.getElementById("footer").addEventListener("click", toggleclass);
+
+function toggleclass() {
+  document.getElementById("footer").classList.toggle("newfooterclass");
+  console.log(document.getElementById("footer").classList);
+}
+
+// item and contains
+
+document.getElementById("sidebar").addEventListener("click", indexfunc);
+
+function indexfunc() {
+  console.log(document.getElementById("sidebar").classList.item(1));
+  console.log(
+    document.getElementById("sidebar").classList.contains("newclass1")
+  );
+  console.log(
+    document.getElementById("sidebar").classList.contains("newclass2")
+  );
+}
+
+// DOM TRAVERSAL METHODS:
+
+/* 
+parentNode
+parentElement
+Children
+childNodes
+firstChild
+firstElementChild
+lastChild
+lastElementChild
+nextElementSibling
+nextSibling
+previousElementSibling
+previousSibling */

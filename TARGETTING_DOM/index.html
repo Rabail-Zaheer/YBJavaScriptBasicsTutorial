@@ -22,7 +22,7 @@
         <h1>I love coding!</h1>
         <h1>I think programming is awesome</h1>
       </div>
-      <div id="menu">
+      <div id="menu" class="blue">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About Us</a></li>
@@ -60,7 +60,7 @@
           </p>
         </div>
 
-        <div id="sidebar">
+        <div id="sidebar" class="newclass1 newclass2 newclass3">
           <ul id="sidebarlist">
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
@@ -71,6 +71,23 @@
       </div>
       <div id="footer">rabailzaheer@copyright 2023.</div>
     </div>
+
+    <div>Click "Remove" to remove the green color from button!</div>
+    <button id="button">Remove</button>
+
+    <script>
+      const btn = document.getElementById("button");
+      btn.addEventListener("mouseenter", myFunc);
+
+      function myFunc() {
+        btn.style.background = "green";
+      }
+      btn.addEventListener("click", removehandler);
+
+      function removehandler() {
+        btn.removeEventListener("mouseenter", myFunc);
+      }
+    </script>
 
     <script src="DOMJs.js"></script>
   </body>
