@@ -338,19 +338,3 @@ function indexfunc() {
     document.getElementById("sidebar").classList.contains("newclass2")
   );
 }
-
-// DOM TRAVERSAL METHODS:
-
-/* 
-parentNode
-parentElement
-Children
-childNodes
-firstChild
-firstElementChild
-lastChild
-lastElementChild
-nextElementSibling
-nextSibling
-previousElementSibling
-previousSibling */

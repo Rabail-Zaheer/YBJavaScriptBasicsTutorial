@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html id="main" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM TRAVERSAL METHODS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+        parentNode
+        parentElement
+        Childre
+        childNodes
+        firstChild
+        firstElementChild
+        lastChild
+        lastElementChild
+        nextElementSibling
+        nextSibling
+        previousElementSibling
+        previousSibling
+     -->
+
+    <div id="outer">
+      <h2>Outer</h2>
+      <div id="inner">
+        <h2 id="first-child">Inner</h2>
+        <div><h3>A</h3></div>
+        <div><h3>B</h3></div>
+        <div id="child-C"><h3>C</h3></div>
+        <div><h3>D</h3></div>
+        <div id="last-child"><h3>E</h3></div>
+      </div>
+    </div>
+
+    <button id="btn">Click</button>
+    <script src="index.js"></script>
+  </body>
+</html>
