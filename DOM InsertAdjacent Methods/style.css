@@ -1,0 +1,14 @@
+body {
+  box-sizing: border-box;
+}
+
+#test {
+  width: 70%;
+  height: 400px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 50px;
+  border: 5px solid black;
+  background-color: darkcyan;
+  color: white;
+}
