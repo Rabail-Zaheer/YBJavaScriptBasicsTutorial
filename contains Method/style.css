@@ -1,0 +1,17 @@
+body {
+  box-sizing: border-box;
+}
+
+div {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 30px;
+  background-color: orchid;
+  color: white;
+}
+
+div h2 {
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
