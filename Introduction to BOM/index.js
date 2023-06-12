@@ -72,3 +72,13 @@ function moveWindow() {
 /* MOVEBY() METHODS - works from relative position */
 
 /* resizeby() and resizeTo() Methods.*/
+
+// resizeto()
+function resizewindow() {
+  myWindow.resizeTo(300, 300);
+}
+
+//resizeby()
+function resizewindowby() {
+  myWindow.resizeBy(300, 300);
+}
